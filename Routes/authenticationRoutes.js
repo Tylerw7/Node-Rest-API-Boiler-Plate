@@ -8,6 +8,6 @@ router.post('/register', createNewUser)
 
 router.post('/login', userLogin)
 
-router.post('/profile-page', verifyTokenAuth)
+router.get('/profile-page', verifyTokenAuth)
 
 module.exports = router
